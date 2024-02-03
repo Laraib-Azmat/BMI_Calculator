@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculateStyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>BMI_Calculate</title>
+  </head>
+  <body>
+    <section id="calculate_page">
+      <header class="content">
+        <a href="../HomePage.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <h1>Your Information</h1>
+      </header>
+      <form action="#">
+        <h2 class="gender_text">Select your Gender</h2>
+
+        <div class="gender">
+          <div id="male">
+            <img class="gender_img male" src="../assets/men_img.png" alt="" />
+          </div>
+          <div id="female">
+            <img
+              class="gender_img female"
+              src="../assets/woman_img.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="weight">
+          <label for="weight"
+            >Enter your weight in Kg
+            <input type="number" id="weight" name="weight" />
+          </label>
+        </div>
+
+        <div class="height">
+          <label for="height">
+            Enter your height in cm
+            <input type="number" id="height" name="height" />
+          </label>
+        </div>
+
+        <div class="btns">
+          <button id="calculate" type="submit">Calculate</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- second section -->
+
+    <section id="section_2">
+      <h1>Here is your calculated BMI</h1>
+      <div class="figure">
+        <div class="speedometer_container">
+          <div class="center_point"></div>
+          <div class="bottom_hide"></div>
+          <div class="arrow_container">
+            <div class="arrow-wrapper">
+              <div class="arrow"></div>
+            </div>
+          </div>
+          <div class="center_hide"></div>
+          <div class="speedometer_scale scale-1"></div>
+          <div class="speedometer_scale scale-2"></div>
+          <div class="speedometer_scale scale-3"></div>
+          <div class="speedometer_scale scale-4"></div>
+          <div class="speedometer_scale scale-5"></div>
+          <div class="speedometer_scale scale-6"></div>
+          <div class="speedometer_scale scale-7"></div>
+          <div class="speedometer_scale scale-8"></div>
+          <div class="speedometer_scale scale-9"></div>
+          <div class="speedometer_scale scale-10"></div>
+          <div class="speedometer_scale scale-11"></div>
+          <div class="speedometer_scale scale-12"></div>
+          <div class="speedometer_scale scale-13"></div>
+          <div class="speedometer_scale scale-14"></div>
+          <div class="speedometer_scale scale-15"></div>
+          <div class="speedometer_scale scale-16"></div>
+          <div class="speedometer_scale scale-17"></div>
+          <div class="speedometer_scale scale-18"></div>
+          <div class="speedometer_scale scale-19"></div>
+        </div>
+        <h4>Your BMI is: <span class="bmi_value"></span>kg/m^2</h4>
+      </div>
+
+      <div class="bmi_results">
+        <div class="bmi_gender_img"><img src="" alt="" /></div>
+
+        <h5 class="bmi_answer"></h5>
+      </div>
+    </section>
+
+    <script src="calculate.js"></script>
+  </body>
+</html>
